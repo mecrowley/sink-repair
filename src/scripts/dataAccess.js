@@ -1,3 +1,5 @@
+const mainContainer = document.querySelector("#container")
+
 const applicationState = {
     requests: []
 }
@@ -32,6 +34,6 @@ export const sendRequest = (userServiceRequest) => {
     return fetch(`${API}/requests`, fetchOptions)
         .then(response => response.json())
         .then(() => {
-
+            mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
         })
 }
