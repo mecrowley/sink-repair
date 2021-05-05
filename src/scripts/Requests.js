@@ -4,19 +4,28 @@ export const Requests = () => {
     const requests = getRequests()
     
     let html = `
-    <ul>
+    <div class="requests__container">
+    <div class="requests__header">
+    <div class="header__description">Description</div><div class="header__completed">Completed By</div>
+    </div>
+    <div class="requests">
     ${
-        requests.map(convertRequestToListElement).join("")
+        requests.map(convertRequestToDivElement).join("")
     }
-    </ul>
+    </div>
+    </div>
     `
     return html
 }
 
-const convertRequestToListElement = (request) => {
+const convertRequestToDivElement = (request) => {
     const plumbers = getPlumbers()
-    return `<li>
+    return `<div class="request">
+    <div class="description">
     ${request.description}
+    </div>
+    <div class="request__mods">
+    <div class="plumber__selection">
     <select class="plumbers" id="plumbers">
     <option value="">Choose</option>
     ${
@@ -26,9 +35,13 @@ const convertRequestToListElement = (request) => {
             }
         ).join("")
     }
-</select>
+    </select>
+    </div>
+    <div class="delete__button">
     <button class="request__delete"id="request--${request.id}">Delete</button>
-    </li>`
+    </div>
+    </div>
+    </div>`
 }
 
 const mainContainer = document.querySelector("#container")

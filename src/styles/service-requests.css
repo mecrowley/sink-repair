@@ -1,0 +1,51 @@
+.requests__container {
+    display: flex;
+    flex-direction: column;
+    /* border: black solid 1px; */
+}
+
+.requests__header {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #BAABBD;
+    color: white;
+}
+
+.header__description {
+    flex: 4;
+}
+
+.header__completed {
+    flex: 2;
+}
+
+.requests {
+    display: flex;
+    flex-direction: column;
+}
+
+.request {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    border: rgb(150, 150, 150) solid 1px;
+}
+
+.description {
+    flex: 4;
+}
+
+.request__mods {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .delete__button {
+    flex: 2;
+} */
+
+.request__delete {
+    background-color: #C9C9EE;
+    color: black;
+}
