@@ -5,9 +5,7 @@ import { SinkRepair } from "./SinkRepair.js"
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-    fetchPlumbers()
-    fetchCompletions()
-    fetchRequests().then(
+    fetchRequests().then(fetchPlumbers).then(fetchCompletions).then(
         () => {
             mainContainer.innerHTML = SinkRepair()
         }

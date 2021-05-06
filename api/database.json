@@ -9,15 +9,21 @@
       "name": "Merle"
     }
   ],
-  "completions": [],
-  "requests": [
+  "completions": [
     {
-      "id": 1,
-      "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
-      "address": "34445 Bianka Ports",
-      "budget": 400,
-      "neededBy": "2021-08-27"
+      "requestId": 2,
+      "plumberId": 1,
+      "date_created": "5/6/2021",
+      "id": 1
     },
+    {
+      "requestId": 4,
+      "plumberId": 2,
+      "date_created": "5/6/2021",
+      "id": 2
+    }
+  ],
+  "requests": [
     {
       "id": 2,
       "description": "Leaking under kitchen sink.",
@@ -31,6 +37,22 @@
       "address": "88 Scobey Drive",
       "budget": 325,
       "neededBy": "2021-09-01"
+    },
+    {
+      "description": "water heater is broken",
+      "address": "670 McFerrin Street",
+      "budget": "26",
+      "neededBy": "2021-05-10",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "description": "clogged bathroom sink",
+      "address": "50 oak drive",
+      "budget": "25",
+      "neededBy": "2021-05-11",
+      "completed": false,
+      "id": 5
     }
   ]
 }

@@ -7,7 +7,7 @@
 .requests__header {
     display: flex;
     padding: 0.5rem;
-    background-color: #BAABBD;
+    background-color: #A28F9D;
     color: white;
 }
 
@@ -28,7 +28,11 @@
     display: flex;
     flex-direction: row;
     padding: 0.5rem;
-    border: rgb(150, 150, 150) solid 1px;
+    border: rgb(206, 206, 206) solid 1px;
+}
+
+.complete {
+    background-color: rgb(206, 206, 206);
 }
 
 .description {
