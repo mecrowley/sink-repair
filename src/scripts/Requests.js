@@ -1,4 +1,4 @@
-import { getRequests, deleteRequest, getPlumbers, saveCompletion, getCompletions, fetchPlumbers } from "./dataAccess.js"
+import { getRequests, deleteRequest, getPlumbers, saveCompletion, getCompletions } from "./dataAccess.js"
 
 export const Requests = () => {
     const requests = getRequests()
