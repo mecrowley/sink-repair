@@ -6,7 +6,7 @@ const applicationState = {
     requests: []
 }
 
-const API = "https://mec-sinkrepair-api-jou7l.ondigitalocean.app/"
+const API = "https://mec-sinkrepair-api-jou7l.ondigitalocean.app"
 
 export const fetchRequests = () => {
     return fetch(`${API}/requests`)
